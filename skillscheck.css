@@ -1,7 +1,20 @@
+html {
+    overflow-x: hidden; 
+}
+
 body {
     font-family: "ivypresto-display", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0; 
+    padding: 0; 
+}
+
+.columns {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .imgindex {
@@ -10,24 +23,32 @@ body {
     background-repeat: no-repeat;
 }
 
+.backimg {
+    background-image: url('aboutme.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+
 img {
     display: block;
 }
 
 .navigation-bar {
     width: 100%;
-    height: 100%;
+    height: 45px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 1);
-    border-bottom: thick solid purple;
+    background-color: #661200;
+    border-bottom: thick solid white;
     float: left; 
+    padding-top: 5px; 
+    letter-spacing: 2px; 
 }
 
 .menu {
-    width: 700px;
+    width: 800px;
     height: 100%;
 }
 
@@ -57,7 +78,7 @@ nav li {
 nav a {
     color: white;
     display: block;
-    width: 100px;
+    width: 130px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -66,12 +87,13 @@ nav a {
 
 nav a:hover,
 nav a:active {
-    color: white;
+    color: black;
 }
 
 .active {
-    background-color: #661200;
-    color: white;
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .header-container {
@@ -82,6 +104,21 @@ nav a:active {
     color: white; 
     display: flex; 
     align-items: center;
+    padding-left: 30px; 
+    padding-right: 200px; 
+}
+
+.header-container-resume {
+    font-family: "sloop-script-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px; 
+    color: white; 
+    display: flex; 
+    align-items: center;
+    padding-left: 50px; 
+    margin: 0px; 
+    padding-right: 50px; 
 }
 
 .h2-container {
@@ -92,12 +129,26 @@ nav a:active {
     color: white;
     letter-spacing: 6px; 
     display: flex; 
+    flex-direction: column;  
+    padding-left: 70px; 
+}
+
+.h2-container-resume {
+    font-family: "ivypresto-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;    
+    color: white;
+    letter-spacing: 6px; 
+    display: flex; 
     flex-direction: column; 
+    padding-right: 30px; 
+    margin: 0px;
+    padding-left: 30px; 
 }
 
 h1 {
     margin: 0; 
-    padding-right: 80px; 
 }
 
 h2 {
@@ -106,16 +157,47 @@ h2 {
 
 .ptext{
     text-align: right;
-    margin: 130px 0px 0px 0px; 
+    margin: 100px 30px 0px 0px; 
     letter-spacing: 3px; 
+    font-size: 25px; 
 }
 
 p {
     font-family: "ivypresto-display", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px; 
     color: white; 
+}
+
+.pabout {
+    font-size: 25px; 
+    margin: 20px; 
+    letter-spacing: 3px; 
+    top: 70px; 
+    right: 20px; 
+    display: flex; 
+    justify-content: flex-end; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.pabout p {
+    margin: 0 10px; 
+}
+
+.pfun {
+    font-family: "ivypresto-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px; 
+    color: white;
+    margin: 20px; 
+    letter-spacing: 3px; 
+    top: 70px; 
+    right: 20px; 
+    margin-top: 20px; 
+    text-align: center;
+    width: 100%; 
 }
 
 .buttonresume {
@@ -196,13 +278,33 @@ main {
     float: right;
 }
 
+.rightabout {
+    width: 100%; 
+    height: 200px; 
+    float: right;  
+    font-size: 20px; 
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
 .left img {
     width: 100%;
 }
 
 .group {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    display: block;
+    width: 50%;
+    padding: 30px;  
 }
 
+.backgroundimg {
+    background-color: #661200; 
+}
+
+.intro-text { 
+    text-align: center; 
+    font-size: 30px; 
+    color: white;
+    margin: 0px; 
+    padding: 0px; 
+}
